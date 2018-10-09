@@ -10,22 +10,23 @@ namespace SmartMenuAp
 {
     class Bindings : IBindings
     {
+ 
         public void Call(string callId)
         {
             switch (callId)
             {
-                case "linie1":
+                case "1":
                     Console.WriteLine(Functions.DoThis());
                     break;
-                case "linie2":
+                case "2":
                     Console.WriteLine(Functions.DoThat());
                     break;
-                case "linie3":
+                case "3":
                     Console.WriteLine("Tell me what to do.");
                     string userInput = Console.ReadLine();
                     Console.WriteLine(Functions.DoSomething(userInput));
                     break;
-                case "linie4":
+                case "4":
                     Console.WriteLine(Functions.GetTheAnswerToLifeTheUniverseAndEverything());
                     break;
                 default:
