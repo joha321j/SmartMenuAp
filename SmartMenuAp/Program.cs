@@ -21,8 +21,7 @@ namespace SmartMenuAp
             Bindings bindings = new Bindings();
 
             //TODO: Be able to choose language.
-            string language, errorPath;
-            language = menu.ChooseLanguage(out errorPath);
+            string language = menu.ChooseLanguage(out string errorPath,out string bindingsPath);
             menu.LoadMenu(language, errorPath);
             menu.Activate(bindings);
         }
